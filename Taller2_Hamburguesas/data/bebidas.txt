@@ -1,0 +1,14 @@
+agua cristal sin gas;5000;0
+agua cristal con gas;5000;0
+gaseosa;6000;60
+coca-cola zero;6900;0
+manzana postobon;6900;70
+colombiana;6900;48
+te hatsu;8000;0
+limonada;6000;40
+limonada con panela;7500;90
+h2o! limon;6900;0
+jugo de mora;7500;43
+jugo de fresa;7500;43
+jugo de mango;7500;80
+jugo de guanabana;7500;53
