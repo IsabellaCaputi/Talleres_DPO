@@ -56,9 +56,10 @@ public class Juego extends JFrame {
 		//obtenemos los datos del jugador (nombre y numero de jugadas)
 		datos = new DatosJugador(this.nombreJugador);
 		add(datos, BorderLayout.SOUTH);
+		//Creamos y agrregamos la cuadricula vacia
 		elTablero = new Cuadricula(this, 1);
 		interfaz.add(elTablero, BorderLayout.CENTER);
-
+		
 		pack();
 		setLocationRelativeTo(null);
 		setVisible(true);
@@ -78,14 +79,7 @@ public class Juego extends JFrame {
 		}
 	}
 	
-	public void play(int[] cells) {
-		if (actual != null) {
-			actual.jugar(cells[0], cells[1]);
-			datos.setJugadas(actual.darJugadas());
-		}
-	}
 
-	//revisarrrrrrrr
 	public void top10() {
 		this.top10 = new Top10();
 		top10.cargarRecords(archivo);
@@ -112,11 +106,7 @@ public class Juego extends JFrame {
 		Top10puntajes.setVisible(true);
 	}
 
-	
-	public void jugar(int[] coordenadas) {
-		actual.jugar(coordenadas[0], coordenadas[1]);
-		datos.setJugadas(actual.darJugadas());				
-	}
+
 	
 	public void cambiarJugador() {
 		datos.setJugadas(0);
